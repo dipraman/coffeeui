@@ -48,7 +48,7 @@ if __name__ == "__main__":
 
     robot_ip = "192.168.1.200"
     conSuc,sock=connectETController( robot_ip )
-    jbi_filename ="coffee_espresso" 
+    jbi_filename ="testdip" 
 
     #if servo is off turn servo on
 
@@ -57,7 +57,7 @@ if __name__ == "__main__":
         suc, result , id=sendCMD(sock,"set_servo_status",{"status":1})
                                  
     #set robot speed
-    suc, result , id = sendCMD(sock, "setSpeed", {"value": 50})
+    suc, result , id = sendCMD(sock, "setSpeed", {"value": 70})
 
     if (conSuc):
 # Check if the jbi file exists
